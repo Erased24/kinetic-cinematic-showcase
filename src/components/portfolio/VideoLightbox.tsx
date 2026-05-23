@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { VideoItem } from "./videoData";
 
 interface Props {
@@ -11,6 +11,9 @@ function isEmbed(url: string) {
 }
 
 export function VideoLightbox({ video, onClose }: Props) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [error, setError] = useState<string | null>(null);
+
   useEffect(() => {
     if (!video) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -21,6 +24,18 @@ export function VideoLightbox({ video, onClose }: Props) {
       window.removeEventListener("keydown", onKey);
     };
   }, [video, onClose]);
+
+  useEffect(() => {
+    if (video && videoRef.current && !isEmbed(video.videoUrl)) {
+      setError(null);
+      videoRef.current.load();
+    }
+  }, [video]);
+
+  const handleVideoError = () => {
+    setError("Failed to load video. The video file may not be accessible.");
+    console.error("Video failed to load:", video?.videoUrl);
+  };
 
   if (!video) return null;
 
@@ -62,7 +77,21 @@ export function VideoLightbox({ video, onClose }: Props) {
               allowFullScreen
             />
           ) : (
-            <video src={video.videoUrl} controls autoPlay className="h-full w-full" />
+            <>
+              <video
+                ref={videoRef}
+                src={video.videoUrl}
+                controls
+                autoPlay
+                className="h-full w-full"
+                onError={handleVideoError}
+              />
+              {error && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/80 p-4 text-center">
+                  <p className="text-sm text-red-400">{error}</p>
+                </div>
+              )}
+            </>
           )}
         </div>
 
