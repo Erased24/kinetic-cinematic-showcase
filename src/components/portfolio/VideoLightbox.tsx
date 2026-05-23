@@ -31,7 +31,7 @@ export function VideoLightbox({ video, onClose }: Props) {
     >
       <button
         onClick={onClose}
-        className="absolute right-6 top-6 flex h-12 w-12 items-center justify-center rounded-full border border-border text-foreground transition-all hover:border-[var(--amber)] hover:text-[var(--amber)]"
+        className="absolute right-6 top-6 flex h-12 w-12 items-center justify-center rounded-full border border-border text-foreground transition-all hover:border-[var(--ember)] hover:text-[var(--ember)]"
         aria-label="Close"
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
@@ -45,14 +45,14 @@ export function VideoLightbox({ video, onClose }: Props) {
       >
         <div className="mb-4 flex items-end justify-between">
           <div>
-            <div className="text-[10px] uppercase tracking-[0.3em] text-[var(--cyan)]">
+            <div className="text-[10px] uppercase tracking-[0.3em] text-[var(--cream)]">
               {video.category}
             </div>
             <h3 className="mt-1 font-display text-3xl md:text-4xl">{video.title}</h3>
           </div>
         </div>
 
-        <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-black glow-amber">
+        <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-black glow-ember">
           {isEmbed(video.videoUrl) ? (
             <iframe
               src={video.videoUrl}

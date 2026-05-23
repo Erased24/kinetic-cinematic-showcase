@@ -29,19 +29,19 @@ export function Contact() {
     <section id="contact" className="relative py-32 md:py-44">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-12 md:px-12">
         <div className="md:col-span-5">
-          <span className="text-xs uppercase tracking-[0.3em] text-[var(--amber)]">
+          <span className="text-xs uppercase tracking-[0.3em] text-[var(--ember)]">
             04 — Contact
           </span>
           <h2 className="mt-6 font-display text-6xl leading-[0.9] md:text-8xl">
             Let's make <br />
-            <span className="text-gradient-amber italic">something</span> <br />
+            <span className="text-gradient-ember italic">something</span> <br />
             move.
           </h2>
 
           <div className="mt-12 space-y-2">
             <a
               href="mailto:hello@chetanjagtap.in"
-              className="block font-serif text-2xl italic text-foreground hover:text-[var(--cyan)] md:text-3xl"
+              className="block font-serif text-2xl italic text-foreground hover:text-[var(--cream)] md:text-3xl"
             >
               hello@chetanjagtap.in
             </a>
@@ -55,7 +55,7 @@ export function Contact() {
                 href={s.href}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-border px-5 py-2 text-xs uppercase tracking-widest transition-all hover:border-[var(--amber)] hover:text-[var(--amber)]"
+                className="rounded-full border border-border px-5 py-2 text-xs uppercase tracking-widest transition-all hover:border-[var(--ember)] hover:text-[var(--ember)]"
               >
                 {s.label} ↗
               </a>
@@ -79,7 +79,7 @@ export function Contact() {
                 onChange={(e) =>
                   setForm({ ...form, [f.key]: e.target.value })
                 }
-                className="mt-2 w-full bg-transparent text-2xl text-foreground outline-none placeholder:text-muted-foreground/40 focus:border-[var(--amber)]"
+                className="mt-2 w-full bg-transparent text-2xl text-foreground outline-none placeholder:text-muted-foreground/40 focus:border-[var(--ember)]"
                 placeholder="—"
               />
             </div>
@@ -101,7 +101,7 @@ export function Contact() {
 
           <button
             type="submit"
-            className="group inline-flex items-center gap-4 rounded-full bg-[var(--amber)] px-10 py-5 text-sm font-medium uppercase tracking-widest text-[var(--primary-foreground)] transition-all hover:glow-amber"
+            className="group inline-flex items-center gap-4 rounded-full bg-[var(--ember)] px-10 py-5 text-sm font-medium uppercase tracking-widest text-[var(--primary-foreground)] transition-all hover:glow-ember"
           >
             Send Message
             <span className="transition-transform group-hover:translate-x-1">→</span>

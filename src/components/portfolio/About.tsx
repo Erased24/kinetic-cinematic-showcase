@@ -4,12 +4,12 @@ export function About() {
       <div className="mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-12 md:px-12">
         <div className="md:col-span-4">
           <div className="sticky top-32">
-            <span className="text-xs uppercase tracking-[0.3em] text-[var(--amber)]">
+            <span className="text-xs uppercase tracking-[0.3em] text-[var(--ember)]">
               01 — About
             </span>
             <h2 className="mt-6 font-display text-6xl md:text-7xl">
               The <br />
-              <span className="text-gradient-amber">craft.</span>
+              <span className="text-gradient-ember">craft.</span>
             </h2>
           </div>
         </div>
@@ -30,9 +30,9 @@ export function About() {
             </p>
             <p>
               My work spans{" "}
-              <span className="text-[var(--cyan)]">financial explainer videos</span>{" "}
+              <span className="text-[var(--cream)]">financial explainer videos</span>{" "}
               that demystify complex data, brand-led{" "}
-              <span className="text-[var(--amber)]">motion graphics</span>, and
+              <span className="text-[var(--ember)]">motion graphics</span>, and
               creative content that gives ideas a pulse. I obsess over timing,
               easing, and the small details that make motion feel inevitable.
             </p>
@@ -45,7 +45,7 @@ export function About() {
               { num: "40+", label: "Happy clients" },
             ].map((s) => (
               <div key={s.label}>
-                <div className="font-display text-4xl text-[var(--amber)] md:text-6xl">
+                <div className="font-display text-4xl text-[var(--ember)] md:text-6xl">
                   {s.num}
                 </div>
                 <div className="mt-2 text-xs uppercase tracking-widest text-muted-foreground">
