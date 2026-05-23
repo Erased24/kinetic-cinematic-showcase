@@ -22,11 +22,11 @@ export function Work() {
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <div className="flex flex-wrap items-end justify-between gap-8">
           <div>
-            <span className="text-xs uppercase tracking-[0.3em] text-[var(--amber)]">
+            <span className="text-xs uppercase tracking-[0.3em] text-[var(--ember)]">
               02 — Selected Work
             </span>
             <h2 className="mt-6 font-display text-6xl md:text-8xl">
-              The <span className="text-gradient-amber">reel.</span>
+              The <span className="text-gradient-ember">reel.</span>
             </h2>
           </div>
 
@@ -37,7 +37,7 @@ export function Work() {
                 onClick={() => setFilter(f)}
                 className={`rounded-full border px-5 py-2.5 text-xs uppercase tracking-widest transition-all ${
                   filter === f
-                    ? "border-[var(--amber)] bg-[var(--amber)] text-[var(--primary-foreground)]"
+                    ? "border-[var(--ember)] bg-[var(--ember)] text-[var(--primary-foreground)]"
                     : "border-border text-muted-foreground hover:border-foreground hover:text-foreground"
                 }`}
               >
@@ -64,17 +64,17 @@ export function Work() {
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90 transition-opacity group-hover:opacity-70" />
 
               {/* Play icon */}
-              <div className="absolute right-5 top-5 flex h-12 w-12 items-center justify-center rounded-full border border-[var(--amber)]/40 bg-background/40 backdrop-blur-sm transition-all group-hover:scale-110 group-hover:bg-[var(--amber)] group-hover:text-[var(--primary-foreground)]">
+              <div className="absolute right-5 top-5 flex h-12 w-12 items-center justify-center rounded-full border border-[var(--ember)]/40 bg-background/40 backdrop-blur-sm transition-all group-hover:scale-110 group-hover:bg-[var(--ember)] group-hover:text-[var(--primary-foreground)]">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="ml-0.5 h-4 w-4">
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
 
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <div className="text-[10px] uppercase tracking-[0.25em] text-[var(--cyan)]">
+                <div className="text-[10px] uppercase tracking-[0.25em] text-[var(--cream)]">
                   {v.category}
                 </div>
-                <h3 className="mt-2 font-display text-2xl leading-tight transition-colors group-hover:text-[var(--amber)] md:text-3xl">
+                <h3 className="mt-2 font-display text-2xl leading-tight transition-colors group-hover:text-[var(--ember)] md:text-3xl">
                   {v.title}
                 </h3>
               </div>

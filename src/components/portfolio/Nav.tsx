@@ -23,7 +23,7 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12">
         <a href="#home" className="font-display text-xl tracking-widest">
-          CJ<span className="text-[var(--amber)]">.</span>
+          CJ<span className="text-[var(--ember)]">.</span>
         </a>
         <nav className="hidden gap-8 md:flex">
           {links.map((l) => (
@@ -38,7 +38,7 @@ export function Nav() {
         </nav>
         <a
           href="#contact"
-          className="rounded-full border border-[var(--amber)]/60 px-4 py-2 text-xs uppercase tracking-widest text-[var(--amber)] transition-all hover:bg-[var(--amber)] hover:text-[var(--primary-foreground)]"
+          className="rounded-full border border-[var(--ember)]/60 px-4 py-2 text-xs uppercase tracking-widest text-[var(--ember)] transition-all hover:bg-[var(--ember)] hover:text-[var(--primary-foreground)]"
         >
           Hire me
         </a>
