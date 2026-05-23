@@ -72,14 +72,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Chetan's Portfolio" },
+      { name: "description", content: "Showcases motion graphics and video editing work with a cinematic, dark-themed portfolio." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Chetan's Portfolio" },
+      { property: "og:description", content: "Showcases motion graphics and video editing work with a cinematic, dark-themed portfolio." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Chetan's Portfolio" },
+      { name: "twitter:description", content: "Showcases motion graphics and video editing work with a cinematic, dark-themed portfolio." },
     ],
     links: [
       {
