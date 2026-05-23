@@ -1,4 +1,4 @@
-export type VideoCategory = "Motion Graphics" | "Financial Videos" | "Factual Content" | "Other";
+export type VideoCategory = "Motion Graphics" | "Financial Videos" | "Short Form" | "Other";
 
 export interface VideoItem {
   id: string;
@@ -15,11 +15,11 @@ export interface VideoItem {
 export const videos: VideoItem[] = [
   {
     id: "1",
-    title: "Comp 1 - Motion Composition",
-    category: "Motion Graphics",
+    title: "Comp 1 - Finance Video",
+    category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=900&q=80",
     videoUrl: "/videos/comp-1.mp4",
-    description: "Dynamic motion graphics composition showcasing visual storytelling techniques.",
+    description: "Financial content with dynamic motion graphics.",
   },
   {
     id: "2",
@@ -31,19 +31,19 @@ export const videos: VideoItem[] = [
   },
   {
     id: "3",
-    title: "Factual Content Series",
-    category: "Factual Content",
+    title: "Finance Fact Series",
+    category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=900&q=80",
     videoUrl: "/videos/fact-2-2.mp4",
-    description: "Educational factual content with engaging visual presentation.",
+    description: "Educational financial content with engaging visual presentation.",
   },
   {
     id: "4",
-    title: "Factual Video Documentary",
-    category: "Factual Content",
+    title: "Financial Video Documentary",
+    category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=900&q=80",
     videoUrl: "/videos/factual-video-4.mp4",
-    description: "Documentary-style factual video with cinematic editing.",
+    description: "Documentary-style financial video with cinematic editing.",
   },
   {
     id: "5",
@@ -56,9 +56,9 @@ export const videos: VideoItem[] = [
   {
     id: "6",
     title: "Siddhicee Project",
-    category: "Other",
+    category: "Short Form",
     thumbnail: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=900&q=80",
     videoUrl: "/videos/siddhicee-p2.mp4",
-    description: "Portfolio project showcasing creative video editing and motion design.",
+    description: "Short-form content showcasing creative video editing and motion design.",
   },
 ];
