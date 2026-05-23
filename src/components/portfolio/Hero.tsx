@@ -45,13 +45,13 @@ export function Hero() {
           </span>
         </div>
 
-        <h1 className="font-display text-[16vw] font-light leading-[0.88] tracking-tight md:text-[13vw] lg:text-[11rem]">
-          <span className="block reveal" style={{ animationDelay: "0.1s" }}>
+        <h1 className="font-display text-[15vw] font-light leading-[1.05] tracking-tight md:text-[12vw] lg:text-[10rem]">
+          <span className="block pb-2 reveal" style={{ animationDelay: "0.1s" }}>
             Chetan
           </span>
           <span
-            className="block italic text-gradient-ember reveal"
-            style={{ animationDelay: "0.35s", fontWeight: 300 }}
+            className="block pb-4 italic text-gradient-ember reveal"
+            style={{ animationDelay: "0.35s", fontWeight: 400 }}
           >
             Jagtap
           </span>

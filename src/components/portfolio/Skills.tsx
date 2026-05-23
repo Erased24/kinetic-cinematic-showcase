@@ -1,17 +1,4 @@
-const skills = [
-  "After Effects",
-  "Premiere Pro",
-  "Motion Graphics",
-  "Kinetic Typography",
-  "Financial Data Viz",
-  "Animation",
-  "Color Grading",
-  "Sound Design",
-  "Storyboarding",
-  "Photoshop",
-  "Illustrator",
-  "Cinema 4D Lite",
-];
+const skills = ["After Effects", "Premiere Pro", "DaVinci Resolve"];
 
 export function Skills() {
   return (
