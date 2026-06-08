@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { videos, type VideoCategory, type VideoItem } from "./videoData";
 import { VideoLightbox } from "./VideoLightbox";
 
-const FILTERS = ["All", "Motion Graphics", "Financial Videos", "Short Form", "Other"] as const;
+const FILTERS = ["All", "Motion Graphics", "Financial Videos", "Short Form"] as const;
 type Filter = (typeof FILTERS)[number];
 
 export function Work() {
