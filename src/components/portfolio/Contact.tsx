@@ -4,8 +4,6 @@ import { toast } from "sonner";
 const socials = [
   { label: "Instagram", href: "https://instagram.com" },
   { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "Vimeo", href: "https://vimeo.com" },
-  { label: "YouTube", href: "https://youtube.com" },
 ];
 
 export function Contact() {
@@ -40,10 +38,10 @@ export function Contact() {
 
           <div className="mt-12 space-y-2">
             <a
-              href="mailto:hello@chetanjagtap.in"
+              href="mailto:chetanjagtap2004ui@gmail.com"
               className="block font-serif text-2xl italic text-foreground hover:text-[var(--cream)] md:text-3xl"
             >
-              hello@chetanjagtap.in
+              chetanjagtap2004ui@gmail.com
             </a>
             <p className="text-sm text-muted-foreground">Mumbai · Available worldwide</p>
           </div>
