@@ -16,6 +16,12 @@ export interface VideoItem {
   description?: string;
 }
 
+const ASSET_HOST = "https://project--fb69c343-3530-4303-8acf-532fe97a818a.lovable.app";
+
+function hostedAssetUrl(url: string) {
+  return url.startsWith("/") ? `${ASSET_HOST}${url}` : url;
+}
+
 // 👋 Chetan — edit this list to add/remove portfolio videos.
 export const videos: VideoItem[] = [
   {
@@ -23,7 +29,7 @@ export const videos: VideoItem[] = [
     title: "Elon Musk",
     category: "Motion Graphics",
     thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
-    videoUrl: elonMusk.url,
+    videoUrl: hostedAssetUrl(elonMusk.url),
     description: "Motion graphics piece featuring Elon Musk.",
   },
   {
@@ -31,7 +37,7 @@ export const videos: VideoItem[] = [
     title: "Personal Finance 6",
     category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80",
-    videoUrl: pf6.url,
+    videoUrl: hostedAssetUrl(pf6.url),
     description: "Personal finance explainer with dynamic motion design.",
   },
   {
@@ -39,7 +45,7 @@ export const videos: VideoItem[] = [
     title: "Personal Finance 4",
     category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=900&q=80",
-    videoUrl: pf4.url,
+    videoUrl: hostedAssetUrl(pf4.url),
     description: "Financial education content in short-form video format.",
   },
   {
@@ -47,7 +53,7 @@ export const videos: VideoItem[] = [
     title: "Personal Finance 2",
     category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=900&q=80",
-    videoUrl: pf22.url,
+    videoUrl: hostedAssetUrl(pf22.url),
     description: "Short-form financial content explaining personal finance concepts.",
   },
   {
@@ -55,7 +61,7 @@ export const videos: VideoItem[] = [
     title: "Challenge 4",
     category: "Short Form",
     thumbnail: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=900&q=80",
-    videoUrl: challenge4.url,
+    videoUrl: hostedAssetUrl(challenge4.url),
     description: "Short-form challenge edit with punchy pacing.",
   },
   {
@@ -63,7 +69,7 @@ export const videos: VideoItem[] = [
     title: "Siddhicee",
     category: "Short Form",
     thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=900&q=80",
-    videoUrl: siddhicee.url,
+    videoUrl: hostedAssetUrl(siddhicee.url),
     description: "Short-form content showcasing creative video editing and motion design.",
   },
 ];
