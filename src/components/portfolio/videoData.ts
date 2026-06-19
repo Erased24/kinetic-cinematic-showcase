@@ -26,7 +26,7 @@ function hostedAssetUrl(url: string) {
 export const videos: VideoItem[] = [
   {
     id: "mg-1",
-    title: "Elon Musk",
+    title: "Motion Graphic",
     category: "Motion Graphics",
     thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
     videoUrl: hostedAssetUrl(elonMusk.url),
@@ -34,7 +34,7 @@ export const videos: VideoItem[] = [
   },
   {
     id: "fin-1",
-    title: "Personal Finance 6",
+    title: "Finance 1",
     category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80",
     videoUrl: hostedAssetUrl(pf6.url),
@@ -42,7 +42,7 @@ export const videos: VideoItem[] = [
   },
   {
     id: "fin-2",
-    title: "Personal Finance 4",
+    title: "Finance 2",
     category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=900&q=80",
     videoUrl: hostedAssetUrl(pf4.url),
@@ -50,7 +50,7 @@ export const videos: VideoItem[] = [
   },
   {
     id: "fin-3",
-    title: "Personal Finance 2",
+    title: "Finance 3",
     category: "Financial Videos",
     thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=900&q=80",
     videoUrl: hostedAssetUrl(pf22.url),
@@ -58,7 +58,7 @@ export const videos: VideoItem[] = [
   },
   {
     id: "sf-1",
-    title: "Challenge 4",
+    title: "Funny reel",
     category: "Short Form",
     thumbnail: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=900&q=80",
     videoUrl: hostedAssetUrl(challenge4.url),
@@ -66,7 +66,7 @@ export const videos: VideoItem[] = [
   },
   {
     id: "sf-2",
-    title: "Siddhicee",
+    title: "Educational video",
     category: "Short Form",
     thumbnail: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=900&q=80",
     videoUrl: hostedAssetUrl(siddhicee.url),
